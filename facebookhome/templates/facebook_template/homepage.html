@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <table  width="100%">
+        <tr style="background-color: rgb(88, 126, 214);height: 100px;">
+
+            <td colspan="3" align="center"><b
+                    style="font-size: bold; font-family: sans-serif; font-size: 45px; color: white;">facebook</b></td>
+
+
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <br><br> <br><br> <br><br> <br>
+                <table width="100%">
+                    <form action="">
+                        <tr>
+                            <td width="30%" align="right">
+                                <label style="font-size: 16px; font-family: sans-serif;"
+                                    for="username">user name :</label>
+                            </td>
+                            <td width="70%" align="left">
+                                <input style="width:250px; height: 20px; border: 1px solid; border-radius: 5px;"
+                                    type="text" id="username">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="30%" align="right">
+                                <label style="font-size: 16px; font-family: sans-serif;"
+                                    for="password">password :</label>
+                            </td>
+                            <td width="70%" align="left">
+                                <input style="width:250px; height: 20px; border: 1px solid; border-radius: 5px;"
+                                    type="text" id="password">
+                            </td>
+                        </tr>
+                        <tr height="30px">
+                            <th colspan="2"></th>
+                        </tr>
+
+                        <tr>
+                            <td align="center" colspan="2">
+                               <a href=""><input
+                                    style="background-color: rgb(88, 126, 214); border-color:rgb(85, 108, 173);width: 100px;height: 30px; border-radius: 7px; color: white;"
+                                    type="button" value="Login">
+                                </a>
+                            </td>
+                        </tr>
+                    </form>
+                </table>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <th  width="20%"></th>
+            <th  width="20%">
+                <hr>
+            </th>
+            <th  width="20%"></th>
+        </tr>
+        <tr>
+            <td align="center" colspan="3">
+            <a href="{% url 'facebookhome:signup' %}"><input style="width: 200px; height: 25px; background-color: rgb(47, 188, 66); border-radius: 6px;" type="button" value="Create new account"></a>
+            </td>
+        </tr>
+        <tr height="100px">
+            <td colspan="3"></td>
+        </tr>
+       
+        <tr >
+            <td align="right"><a style="text-decoration: none; color: black;" href="">about</a></td>
+            <td align="center"><a style="text-decoration: none; color:black;" href="">help</a></td>
+            <td align="left"><a style="text-decoration: none; color: black;" href="">more</a></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
